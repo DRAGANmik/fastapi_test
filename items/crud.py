@@ -32,7 +32,7 @@ def create_item(db: Session, item: Item):
 
 
 def update_item(db: Session, item: Item):
-    """ Update value field """
+    """Update value field"""
     item_upd = db.query(Item).filter(Item.id == item.id).first()
     if item_upd:
         item_upd.value = item.value

@@ -10,4 +10,4 @@ EXPOSE 8000:8000
 
 RUN pip install -r requirements.txt
 
-CMD [ "uvicorn", "main:app", "--host", "127.0.0.1", "--reload" ]
+CMD [ "uvicorn", "main:app", "--host", "0.0.0.0", "--reload" ]

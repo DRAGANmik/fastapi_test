@@ -6,7 +6,8 @@ from core.database import Base
 
 
 class Item(Base):
-    """ Item model """
+    """Item model"""
+
     __tablename__ = "items"
 
     id = Column(Integer, primary_key=True, unique=True)

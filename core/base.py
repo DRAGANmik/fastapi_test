@@ -2,4 +2,3 @@
 from items.models import Item
 
 from .database import Base
-
